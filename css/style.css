@@ -36,6 +36,9 @@ h1{
     box-sizing: border-box;
     text-align: center;
   }
+  span{
+    text-decoration: red;
+  }
   
   .movie-details img {
     max-width: 100%;

@@ -1,11 +1,20 @@
-ocument.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const moviePoster = document.getElementById("movie-poster");
   const movieTitle = document.getElementById("movie-title");
   const movieRuntime = document.getElementById("movie-runtime");
+  const movieCapacity = document.getElementById("capacity")
   const movieShowtime = document.getElementById("movie-showtime");
   const availableTickets = document.getElementById("available-tickets");
   const filmsList = document.getElementById("films");
   const buyTicketBtn = document.getElementById("buy-ticket-btn");
+
+  function movieDetails(){
+    fetch("http://localhost:5500")
+    then(response => response.json())
+    then(data => {
+        dtails = [...data]
+    })
+  }
 
   // Function to fetch and display movie details
   function loadMovieDetails(movieId) {
@@ -43,7 +52,7 @@ ocument.addEventListener("DOMContentLoaded", () => {
                   filmsList.appendChild(listItem);
               });
           })
-          .catch(error => console.error(error));
+        //   .catch(error => console.error(error));
   }
 
   // Load movies list on page load
