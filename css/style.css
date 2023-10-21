@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:wheat;
+    
+}
+h1{
+    text-align: center;
+}
+.logo{
+  font-size: 1.1rem;
+  font-weight: 100;
+  color: red;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+
+}
+.logo .bx{
+  font-size: 24px;
+  color: red;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 10px; /* Adjust the gap as needed */
+  }
+  
+  .movie-details {
+    flex: 0 0 calc(20% - 10px); /* 20% width for 5 columns with 10px gap */
+    margin-bottom: 10px; /* Adjust the margin as needed */
+    padding: 10px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .movie-details img {
+    max-width: 100%;
+    height: auto;
+  }
+
+ul#films {
+    list-style: none;
+    padding: 0;
+}
+
+ul#films li {
+    cursor: pointer;
+    margin: 5px;
+}
+
+ul#films li:hover {
+    text-decoration: underline;
+}
