@@ -45,6 +45,19 @@ document.addEventListener('DOMContentLoaded', () =>{
       }
   }
 
+
+  button.addEventListener('click', () => {
+    if (remainingtickets > 0) {
+      remainingtickets--;
+      availabletickets.innerText = `Available Tickets: ${remainingtickets}`;
+    } else {
+      // No available tickets, so disable the button and set it to "Sold Out"
+      button.disabled = true;
+      button.innerText = 'Sold Out';
+      button.style.backgroundColor = 'grey';
+    }
+  })
+
   //CLick Movie title to show details
 
   function movieInfo(id){
