@@ -18,7 +18,7 @@ body {
 #runtime {
   background-color: #333333;
   color: crimson;
-  padding: 0px 0px 5px 5px;
+  /* padding: 0px 0px 5px 5px; */
 }
 
 .content {
@@ -33,6 +33,9 @@ body {
 #showing {
   margin-left: 20px;
 }
+.runtime{
+  text-decoration: navy;
+}
 
 #films li::before {
   content: "";
@@ -44,7 +47,7 @@ body {
 }
 
 .sold-out {
-  color: lightgray;
+  color: red;
 }
 
 img {
